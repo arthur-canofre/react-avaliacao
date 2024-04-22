@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid whitesmoke;
+}
+
+.header div{
+  display: flex;
+  gap: 20px;
+}
+
+.header img{
+  height: 60px;
+  padding: 10px;
+}
+
+.sobre{
+  padding: 10px;
+}
+
+.sobre h2{
+  padding: 10px;
+}
+
+.sobre p{
+  padding: 10px;
+  padding-top: 0;
+}
+
+.horas_local{
+  padding: 5px 25px;
+}
+
+.horas_local p{
+  padding-left: 5px;
+}
+
+.galeria{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.imgs{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+.galeria img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.footer{
+  height: 100px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px){
+  .header img{
+    width: 100px;
+  }
+  .imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
